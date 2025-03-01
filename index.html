@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="uff-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>BULB</title>
+</head>
+<body>
+<div id="bulb">
+    <img id="Image" src="https://cdn.pixabay.com/photo/2014/04/03/10/42/bulb-311155_1280.png"  width="278" height="320">
+</div>
+<div>
+    <button type= "button" id="on">on</button>
+    <button type= "button" id="off">off</button>
+</div>
+<script >
+    const on = document.querySelector("#on");
+    const off = document.querySelector("#off");
+    const bulb = document.querySelector("#bulb");
+
+    on.addEventListener("click",(e)=>{
+        bulb.innerHTML = `<img src="https://i.pinimg.com/736x/8b/e0/60/8be0603fa9222908eac38746f7c72c2a.jpg" alt="https://i.pinimg.com/736x/8b/e0/60/8be0603fa9222908eac38746f7c72c2a.jpg" width="194" height="236" class="shrinkToFit">`
+        bulb.style.width ="20px"
+
+    },)
+    off.addEventListener("click",(e)=>{
+        bulb.innerHTML = `    <img id="Image" src="https://cdn.pixabay.com/photo/2014/04/03/10/42/bulb-311155_1280.png"  width="278" height="320">`
+
+    
+    },)
+</script>
+
+
+
+
+
+</body>
+</html>
